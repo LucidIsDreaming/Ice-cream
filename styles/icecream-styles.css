@@ -1,0 +1,94 @@
+
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding: 40px 0;
+    background-color: rgb(210, 228, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: .5rem;
+}
+
+#header {
+    text-align: center;
+    padding-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+/*personal information*/
+
+#icecream-form{
+    width: 100%;
+}
+
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: .25em;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: .75rem;
+}
+
+select{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 1rem;
+    padding: .75rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+   
+textarea{
+    resize: none;
+}
+
+legend{
+    padding: 0 15px;
+    color: rgb(5, 144, 0);
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+fieldset{
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+#submit-button{
+    width: 100%;
+    background-color: green;
+    color: white;
+    border-color: green;
+    border-radius: .5rem;
+    padding: .5rem .75rem;
+    font-size: 1.5rem;
+}
+
+label[for="waffle"], label[for="sugar"], label[for="cup"], label[for="sprinkles"] label[for="nuts"], label[for="cherry"], label[for="whipped-cream"]{
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-right: .5rem;
+}
+
+label[for="toppings"], label[for="comment"]{
+    padding-bottom: .5rem;
+    display: block;
+}
+
+label[for="choose-cone"]{
+    display: block;
+}
+
+
+textarea{
+    resize: none;
+}

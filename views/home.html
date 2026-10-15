@@ -8,6 +8,8 @@
 
         <link rel="stylesheet" href="styles/icecream-styles.css">
 
+        <script src="js/ice-cream.js">defer</script>
+
 
 </head>
 <body>
@@ -20,38 +22,53 @@
 
     
         <form id = "icecream-form" action = "#" method ="get">
-        
 
-
-                    <!-- Name and Email -->
+                    <!-- Contact Info -->
                 
                     <fieldset>
                         <legend>Personal Information</legend>
-                        <label for="fname">Name:</label>
-                        <input type="text" id="fname" name="fname">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                    </fieldset>
-                
- 
 
-                <!-- Flavor -->
+                        <label for="fname">First Name:</label>
+                        <span class= "err" id= "err-fname">First name is required</span>
+
+                        <input type="text" id="fname" name= "fname">
+
+                        <label for="email">Email:</label>
+                        <span class= "err" id= "err-email">Email is required</span>
+
+                        <input type="email" id="email" name="email">
+
+
+                    </fieldset>
+
+                <!-- Flavor (pizza size)-->
                 <fieldset>
                     <legend>Order Details</legend>
 
+
                     <label for="choose-flavor">Choose your flavor:</label>
+                    <span class="err" id="err-flavor">Select a Flavor</span>
 
                     <select id = "flavor" name = "flavor">
                             <option value = "none">-- Select a Flavor --</option>
+
+
                             <option value = "vanilla">Vanilla</option>
+
+
                             <option value = "chocolate">Chocolate</option>
+
+
                             <option value = "strawberry">Strawberry</option>
                     </select>
-                
 
-                <!-- Type of Cone -->
-                
+                </fieldset>
+
+                <!-- Type of Cone (pickup or delivery)-->
+                <fieldset>
+                    <span class="err" id="err-method">Select a Cone Option</span>
                     <label for="choose-cone">Choose your cone:</label>
+
                     <label for ="waffle">
                         <input type = "radio" id = "waffle" name = "method" value = 
                         "waffle">
@@ -67,10 +84,11 @@
                         "cup">
                         Cup
                     </label>
-               
+
+                </fieldset>
 
                 <!-- Toppings -->
-               
+                <fieldset>
                     <label for="toppings">Toppings:</label>
 
                     <label for = "sprinkles">
@@ -97,17 +115,17 @@
                             Whipped Cream
                     </label>
 
-               
-
+                </fieldset>
 
                 <!-- Comments -->
                 
                 <label for = "comment"> Additional Comments:</label>
                 <textarea rows = "5" id="comment" name="comment"></textarea>
 
-</fieldset>
-<!-- Order Button -->
-                <button type="submit" id="submit-button">Submit Order</button>
+                <!-- Order Button -->
+                <button type="submit" id="order-button">Submit Order</button>
+
+            
             </form>
 
         </div>

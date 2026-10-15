@@ -22,6 +22,8 @@ body{
     margin-bottom: 1rem;
 }
 
+
+
 /*personal information*/
 
 #icecream-form{
@@ -91,4 +93,9 @@ label[for="choose-cone"]{
 
 textarea{
     resize: none;
+}
+
+.err{
+    color: red;
+    /*display: none;*/
 }

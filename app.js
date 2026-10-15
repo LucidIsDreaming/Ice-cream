@@ -3,7 +3,7 @@ import express from 'express';
 //Create and instance of an express application
 const app = express();
 //Define a port number for our server to listen on 
-const PORT = 3000;
+const PORT = 3001;
 
 app.use(express.static('public'));
 app.get('/', (req, res) => {
